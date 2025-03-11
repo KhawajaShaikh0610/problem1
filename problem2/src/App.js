@@ -5,7 +5,7 @@ const App = () => {
   const [records, setRecords] = useState([]);
 
   const addRecord = async () => {
-    const randomId = Math.floor(Math.random() * 83) + 1;
+    const randomId = Math.floor(Math.random() * 10) + 1;
     try {
       const response = await axios.get(
         `https://swapi.dev/api/people/${randomId}`
